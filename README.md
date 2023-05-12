@@ -1,1 +1,3 @@
 Minimal repository to test automatic manuscript generation using Quarto, and subsequent relocation of the pdf back to the main branch. Uses github actions, largely based on an implementation by Lincoln Colling (ljcolling) but with some minor tweaks.
+
+Note that this presupposes a specific workflow - if you have a local clone of the repository that you are working on, each time you commit a new pdf will be generated. This means it is necessary to 'pull' again (once the pdf has built) to update your local copy before making further changes. Otherwise your local branch will be behind the remote master version. Alternatively, the file manuscript.pdf can be added to the .gitignore file. However you will then need to check on the github server for the built file.
