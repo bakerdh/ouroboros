@@ -3,23 +3,12 @@ title: "manuscript"
 format: pdf
 ---
 
-## Updated to deploy to main branch
+## Auto-generated pdfs
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+This pdf was generated automatically using Github actions and a Docker image. Each time the repository is updated (via a commit), a server is tasked with loading a Docker image running R, and building the manuscript Quarto file (manuscript.qmd). This creates a pdf file, which is copied back into the main repository automatically. This has many use cases:
 
-## Running Code
+1. When developing code, one can push to the respository, and then a few minutes later pull the built manuscript file back to your local machine. All code is run remotely in a 'frozen' computational environment.
 
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+2. Code can be edited directly on the Github server, for example using an iPad, or other device not able to run R. Once changes are committed, they will appear in the pdf file.
 
-```{r}
-1 + 1
-```
-
-You can add options to executable code like this 
-
-```{r}
-#| echo: false
-2 * 2
-```
-
-The `echo: false` option disables the printing of code (only output is displayed).
+3. Another person can clone your repository, make changes, and see their effects, without having to download any code to their own machine.

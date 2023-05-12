@@ -1,1 +1,1 @@
-Minimal repository to test automatic manuscript generation using Quarto, and subsequent relocation of the pdf back to the main branch. 
+Minimal repository to test automatic manuscript generation using Quarto, and subsequent relocation of the pdf back to the main branch. Uses github actions, largely based on an implementation by Lincoln Colling (ljcolling) but with some minor tweaks.
