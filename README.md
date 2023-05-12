@@ -1,0 +1,1 @@
+Minimal repository to test automatic manuscript generation using Quarto, and subsequent relocation of the pdf back to the main branch. 
